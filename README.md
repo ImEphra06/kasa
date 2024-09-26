@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Base de code du projet P11 - Parcours Front-end - React
+Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Le site de l'agence Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Une refonte totale est décidée pour passer à une stack complète en JavaScript avec React côté Front-end.Il s'agit donc, sur la base des maquettes desktop et mobile fournies, de réaliser une app React Kasa qui présente:
+ - Une page d'accueil présentant une liste de 20 logements. Chaque logement est cliquable et peut être vu de façon détaillée
+ - Une page A propos décrivant les valeurs de l'agence
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+ - git clone https://github.com/MenAllen/PhilippeJoubard_P11_032022.git
+ - npm install pour installer l'application
+ - npm start pour lancer l'application qui s'affiche sous localhost:3000
 
-## Available Scripts
+## Page netlify
+Une page netlify est disponible sous : https://stellular-marshmallow-ca39e0.netlify.app/
 
-In the project directory, you can run:
+## Inputs
+ - Maquettes FIGMA Desktop et Mobile
+ - Tableau JSON de 20 appartements avec description photos, points forts et rating
 
-### `yarn start`
+## Code
+ - Main App: src\index.js qui inclue le routage vers les différentes pages
+ - Pages: src\pages\Accueil.jsx, Apropos.jsx et Logements.jsx
+ - Composants: src\components\Banner, Card, Carrousel, Dropdown, Error, Footer, Header, Pitch (jsx et css)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Outils utilisés
+ - React Create App
+ - HTML, CSS, Javascript
+ - ESlint Linter
+ - Prettier Code formateur
+ - Styled-Components
+ - P42 code analyseur et amelioreur
