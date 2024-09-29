@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Banner from "../components/banner/banner"
 import Card from "../components/card/card";
+import Error from '../components/error/error'
 import { useFetch } from "../utils/hook";
 import { LoaderWrapper, Loader } from "../utils/loader";
 
@@ -21,7 +22,7 @@ function Accueil() {
     const { locationList, isLoading, error } = useFetch("/data/data.json");
 
     if (error) {
-        return <span>Oups il y a eu un problème</span>;
+        return <Error/>;
     }
 
     return isLoading ? (

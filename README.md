@@ -8,9 +8,6 @@ Kasa est dans le métier de la location d’appartements entre particuliers depu
  - npm install pour installer l'application
  - npm start pour lancer l'application qui s'affiche sous localhost:3000
 
-## Page netlify
-Une page netlify est disponible sous : https://stellular-marshmallow-ca39e0.netlify.app/
-
 ## Inputs
  - Maquettes FIGMA Desktop et Mobile
  - Tableau JSON de 20 appartements avec description photos, points forts et rating
