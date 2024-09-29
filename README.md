@@ -4,7 +4,7 @@ Kasa est dans le métier de la location d’appartements entre particuliers depu
  - Une page A propos décrivant les valeurs de l'agence
 
 ## Installation
- - git clone https://github.com/MenAllen/PhilippeJoubard_P11_032022.git
+ - git clone https://github.com/ImEphra06/kasa.git
  - npm install pour installer l'application
  - npm start pour lancer l'application qui s'affiche sous localhost:3000
 

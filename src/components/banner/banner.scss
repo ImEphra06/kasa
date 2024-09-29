@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.banner img {
+.imgAccueil {
     object-fit: cover;
     align-self: center;
     border-radius: 25px;
@@ -14,6 +14,7 @@
     height: auto;
     min-height: 223px;
     filter: brightness(50%);
+    object-fit: cover;
 }
 
 .banner h1 {

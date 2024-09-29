@@ -32,7 +32,7 @@ function Accueil() {
         </React.Fragment>
     ) : (
         <React.Fragment>
-            <Banner />
+            <Banner page="Accueil" texte="Chez vous, partout ailleurs"/>
             <LocationContainer>
                 {locationList.map((location) => (
                     <Card key={location.id} id={location.id} title={location.title} cover={location.cover} />

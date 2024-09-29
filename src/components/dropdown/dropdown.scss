@@ -1,0 +1,45 @@
+.bloc-accueil {
+	width: 47%;
+	flex-direction: column;
+}
+
+.bloc-apropos {
+	width: 82%;
+	flex-direction: column;
+}
+
+.bloc-apropos img {
+	width: 27px;
+	height: 27px;
+}
+
+.titre {
+	background-color: #ff6060;
+	color: white;
+	border-radius: 10px;
+	height: 52px;
+	font-size: 24px;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	position: relative;
+	cursor: pointer;
+}
+
+.contenu {
+	background-color: #f6f6f6;
+	padding: 40px 20px;
+	margin-top: -10px;
+}
+
+.contenu p {
+	font-size: 24px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.hidden {
+	display: none;
+}

@@ -1,12 +1,13 @@
 import './banner.scss'
-import banniere from '../../assets/accueil.jpg'
+import banAcc from '../../assets/accueil.jpg'
+import banApr from '../../assets/apropos.jpg'
 
 
-function Banner() {
+function Banner({ page, texte }) {
     return (
         <div className='banner'>
-            <img src={banniere} alt='Banniere de l`acceueil'/>
-            <h1>Chez vous, partout ailleurs</h1>
+            <img src={page === "Accueil" ? banAcc : banApr} className={page === "Apropos" ? "imgApropos" : "imgAccueil"} alt="bannière" />
+            <h1>{texte}</h1>
         </div>
     )
 }

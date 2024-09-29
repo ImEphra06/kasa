@@ -5,6 +5,7 @@ import './index.scss';
 
 import Header from './components/header/header'
 import Accueil from './pages/acceuil';
+import Apropos from "./pages/apropos";
 import Error from './components/error/error'
 import Footer from './components/footer/footer'
 
@@ -15,6 +16,7 @@ root.render(
 			<Header />
 			<Routes>
 				<Route exact path="/" element={<Accueil />} />
+				<Route path="/about" element={<Apropos />} />
 				<Route path="/*" element={<Error />} />
 			</Routes>
 			<Footer />
