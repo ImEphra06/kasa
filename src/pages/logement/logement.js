@@ -1,27 +1,12 @@
 import React from "react";
 import { useParams, Navigate } from "react-router-dom";
-import { useFetch } from "../utils/hook";
-import { LoaderWrapper, Loader } from "../utils/loader";
+import { useFetch } from "../../utils/hook";
+import { LoaderWrapper, Loader } from "../../utils/loader";
 
-import styled from "styled-components";
-import Carrousel from "../components/carrousel/carrousel";
-import Rating from "../components/rating/rating";
-import Dropdown from "../components/dropdown/dropdown";
-
-
-/* Définition du style du className LogementContainer */
-const LogementContainer = styled.div`
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: 40px 7%;
-	width: 86%;
-
-	@media screen and (max-width: 780px) {
-		flex-direction: column;
-		margin: 10px 7px 40px; 
-	}
-`;
+import "./logement.scss";
+import Carrousel from "../../components/carrousel/carrousel";
+import Rating from "../../components/rating/rating";
+import Dropdown from "../../components/dropdown/dropdown";
 
 function Logement() {
 	const { userId } = useParams();
@@ -48,10 +33,10 @@ function Logement() {
 			<React.Fragment>
 				<Carrousel images={locationSelected.pictures} titre={locationSelected.title} />
 				<Rating logement={locationSelected} />
-				<LogementContainer>
+				<div className="LogementContainer">
 					<Dropdown page="logement" titre="Description" contenu={locationSelected.description} />
 					<Dropdown page="logement" titre="Equipements" contenu={locationSelected.equipments} />
-				</LogementContainer>
+				</div>
 			</React.Fragment>
 		);
 	}

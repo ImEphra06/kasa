@@ -1,29 +1,11 @@
 import React from "react";
-import { useFetch } from "../utils/hook";
-import { LoaderWrapper, Loader } from "../utils/loader";
+import { useFetch } from "../../utils/hook";
+import { LoaderWrapper, Loader } from "../../utils/loader";
 
-import styled from "styled-components";
-import Banner from "../components/banner/banner"
-import Card from "../components/card/card";
-import Error from '../components/error/error'
-
-const LocationContainer = styled.div`
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	background-color: #f6f6f6;
-	padding: 20px 0;
-	border-radius: 25px;
-	margin: 40px 7%;
-	width: 86%;
-
-    @media screen and (max-width: 780px) {
-		margin: 20px 7%;
-		padding: 0;
-		background-color: #ffffff;
-	}
-`;
+import './acceuil.scss';
+import Banner from "../../components/banner/banner"
+import Card from "../../components/card/card";
+import Error from '../error/error'
 
 function Accueil() {
     const { locationList, isLoading, error } = useFetch("/data/data.json");
@@ -41,11 +23,11 @@ function Accueil() {
     ) : (
         <React.Fragment>
             <Banner page="Accueil" texte="Chez vous, partout ailleurs"/>
-            <LocationContainer>
+            <div className="LocationContainer">
                 {locationList.map((location) => (
                     <Card key={location.id} id={location.id} title={location.title} cover={location.cover} />
                 ))}
-            </LocationContainer>
+            </div>
         </React.Fragment>
     )
 }

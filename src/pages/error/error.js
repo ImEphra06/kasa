@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 import "./error.scss";
 
-/**
- *
- * @returns Affichage de la page d'erreur de navigation
- */
-
 function Error() {
 	return (
 		<article className="error">

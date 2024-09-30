@@ -1,0 +1,14 @@
+.LogementContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 7%;
+    width: 86%;
+}
+
+@media screen and (max-width: 780px) {
+    .LogementContainer {
+        flex-direction: column;
+        margin: 10px 7px 40px;
+    }
+}

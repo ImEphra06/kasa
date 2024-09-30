@@ -1,22 +1,8 @@
 import React from "react";
-import styled from "styled-components";
-import Banner from "../components/banner/banner"
-import Dropdown from "../components/dropdown/dropdown";
 
-/* Définition du style du className AproposContainer */
-const AproposContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
-    margin: 38px 55px 0px;
-    gap: 15px;
-
-	@media screen and (max-width: 780px) {
-		margin: 0 0 150px 0; 
-	}
-`;
+import './apropos.scss'
+import Banner from "../../components/banner/banner"
+import Dropdown from "../../components/dropdown/dropdown";
 
 function Apropos() {
     const contenuFiabilite = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.";
@@ -27,12 +13,12 @@ function Apropos() {
     return (
         <React.Fragment>
             <Banner page="Apropos" texte="" />
-            <AproposContainer>
+            <div className="AproposContainer">
                 <Dropdown page="apropos" titre="Fiabilité" contenu={contenuFiabilite} />
                 <Dropdown page="apropos" titre="Respect" contenu={contenuRespect} />
                 <Dropdown page="apropos" titre="Service" contenu={contenuService} />
                 <Dropdown page="apropos" titre="Sécurité" contenu={contenuSecurite} />
-            </AproposContainer>
+            </div>
         </React.Fragment>
     );
 }
