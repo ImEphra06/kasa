@@ -23,3 +23,22 @@
 .acceuil:hover {
     text-decoration: underline;
 }
+
+
+/* =========================================================================================== */
+@media screen and (max-width: 780px) {
+	.header {
+		margin: 20px 7%;
+	}
+
+	.link {
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: 0 0 0 15px;
+	}
+
+	.header img {
+		width: 130px;
+		height: auto;
+	}
+}

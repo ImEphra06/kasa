@@ -44,3 +44,30 @@ article img {
 .hidden {
 	display: none;
 }
+
+
+/* =========================================================================================== */
+@media screen and (max-width: 780px) {
+	.bloc-accueil {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.bloc-apropos {
+		width: 90%;
+		margin: 10px 20px;
+	}
+
+	.titre {
+		font-size: 13px;
+		height: 30px;
+	}
+
+	.contenu p {
+		font-size: 12px;
+	}
+
+	.contenu {
+		padding: 20px 10px;
+	}
+}

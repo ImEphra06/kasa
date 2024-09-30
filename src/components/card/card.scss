@@ -33,3 +33,15 @@ figure img {
 a {
 	margin: 0;
 }
+
+
+/* =========================================================================================== */
+@media screen and (max-width: 780px) {
+	figcaption {
+		top: 78%;
+	}
+
+	figure img {
+		height: 255px;
+	}
+}

@@ -14,7 +14,7 @@ const AproposContainer = styled.div`
     gap: 15px;
 
 	@media screen and (max-width: 780px) {
-		margin: 0 0 150px 0;
+		margin: 0 0 150px 0; 
 	}
 `;
 

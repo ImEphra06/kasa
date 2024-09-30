@@ -1,10 +1,11 @@
 import React from "react";
+import { useFetch } from "../utils/hook";
+import { LoaderWrapper, Loader } from "../utils/loader";
+
 import styled from "styled-components";
 import Banner from "../components/banner/banner"
 import Card from "../components/card/card";
 import Error from '../components/error/error'
-import { useFetch } from "../utils/hook";
-import { LoaderWrapper, Loader } from "../utils/loader";
 
 const LocationContainer = styled.div`
 	display: flex;
@@ -16,6 +17,12 @@ const LocationContainer = styled.div`
 	border-radius: 25px;
 	margin: 40px 7%;
 	width: 86%;
+
+    @media screen and (max-width: 780px) {
+		margin: 20px 7%;
+		padding: 0;
+		background-color: #ffffff;
+	}
 `;
 
 function Accueil() {

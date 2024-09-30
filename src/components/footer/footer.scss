@@ -20,6 +20,7 @@
     align-items: center;
     gap: 10px;
 }
+
 .copy {
     width: 24px;
     height: 24px;
@@ -28,4 +29,22 @@
 .right {
     color: white;
     font-size: 24px;
+}
+
+
+/* =========================================================================================== */
+@media screen and (max-width: 780px) {
+	.copyright {
+		font-size: 12px;
+		padding-top: 10px;
+	}
+
+    .copy {
+        width: 12px;
+        height: 12px;
+    }
+
+	.logo2 {
+		margin-top: 15px;
+	}
 }

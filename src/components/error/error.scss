@@ -31,3 +31,22 @@
 h3:visited {
 	color: #ff6060;
 }
+
+
+/* =========================================================================================== */
+@media screen and (max-width: 780px) {
+	.error strong {
+		font-size: 96px;
+		font-weight: 700;
+		line-height: 137px;
+	}
+
+	.error h2 {
+		font-size: 18px;
+		white-space: normal;
+	}
+
+	.error h3 {
+		font-size: 14px;
+	}
+}

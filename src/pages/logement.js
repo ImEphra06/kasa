@@ -1,11 +1,13 @@
 import React from "react";
 import { useParams, Navigate } from "react-router-dom";
-import styled from "styled-components";
 import { useFetch } from "../utils/hook";
+import { LoaderWrapper, Loader } from "../utils/loader";
+
+import styled from "styled-components";
 import Carrousel from "../components/carrousel/carrousel";
 import Rating from "../components/rating/rating";
 import Dropdown from "../components/dropdown/dropdown";
-import { LoaderWrapper, Loader } from "../utils/loader";
+
 
 /* Définition du style du className LogementContainer */
 const LogementContainer = styled.div`
@@ -17,7 +19,7 @@ const LogementContainer = styled.div`
 
 	@media screen and (max-width: 780px) {
 		flex-direction: column;
-		margin: 10px 7% 40px 7%px;
+		margin: 10px 7px 40px; 
 	}
 `;
 

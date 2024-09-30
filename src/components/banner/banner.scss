@@ -26,3 +26,29 @@
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
 }
+
+
+/* =========================================================================================== */
+@media screen and (max-width: 780px) {
+	.imgAccueil,
+	.imgApropos {
+		min-height: 111px;
+		height: 111px;
+		border-radius: 10px;
+		width: 90%;
+	}
+
+	.imgApropos {
+		height: 223px;
+		border-radius: 10px;
+		width: 90%;
+	}
+
+	.banner h1 {
+		font-size: 24px;
+		width: 60%;
+		margin-left: 10px;
+		margin-right: 70px;
+		text-align: left;
+	}
+}
