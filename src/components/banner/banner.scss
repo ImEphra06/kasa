@@ -30,7 +30,11 @@
 
 /* =========================================================================================== */
 @media screen and (max-width: 780px) {
-	.imgAccueil,
+	.banner {
+        padding-top: 27px;
+    }
+
+    .imgAccueil,
 	.imgApropos {
 		min-height: 111px;
 		height: 111px;
@@ -38,17 +42,11 @@
 		width: 90%;
 	}
 
-	.imgApropos {
-		height: 223px;
-		border-radius: 10px;
-		width: 90%;
-	}
-
 	.banner h1 {
 		font-size: 24px;
+        top: 31px;
+        left: 31px;
 		width: 60%;
-		margin-left: 10px;
-		margin-right: 70px;
 		text-align: left;
 	}
 }

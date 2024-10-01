@@ -5,11 +5,12 @@
     align-items: center;
     justify-content: space-around;
     margin: 38px 55px 0px;
-    gap: 15px;
+    gap: 30px;
 }
 
 @media screen and (max-width: 780px) {
     .AproposContainer {
-        margin: 0 0 150px 0;
+        margin: 19px 0;
+        gap: 2 0px;
     }
 }
