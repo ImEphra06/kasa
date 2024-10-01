@@ -18,7 +18,7 @@ function Dropdown({ page, titre, contenu }) {
 				{titre}
 				<img src={openState === false ? up : down} alt={openState === false ? "Chevron up" : "Chevron down"} />
 			</summary>
-			
+
 			<div className={openState === false ? "contenu hidden" : "contenu"}>
 				{typeof contenu === "string" ? (
 					<p>{contenu}</p>

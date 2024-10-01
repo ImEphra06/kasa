@@ -11,7 +11,7 @@ function Accueil() {
     const { locationList, isLoading, error } = useFetch("/data/data.json");
 
     if (error) {
-        return <Error/>;
+        return <Error />;
     }
 
     return isLoading ? (
@@ -22,7 +22,7 @@ function Accueil() {
         </React.Fragment>
     ) : (
         <React.Fragment>
-            <Banner page="Accueil" texte="Chez vous, partout ailleurs"/>
+            <Banner page="Accueil" texte="Chez vous, partout ailleurs" />
             <div className="LocationContainer">
                 {locationList.map((location) => (
                     <Card key={location.id} id={location.id} title={location.title} cover={location.cover} />
