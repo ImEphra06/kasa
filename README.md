@@ -5,8 +5,8 @@ Kasa est dans le métier de la location d’appartements entre particuliers depu
 
 ## Installation
  - git clone https://github.com/ImEphra06/kasa.git
- - npm install pour installer l'application
- - npm start pour lancer l'application qui s'affiche sous localhost:3000
+ - yarn install pour installer l'application
+ - yarn start pour lancer l'application qui s'affiche sous localhost:3000
 
 ## Inputs
  - Maquettes FIGMA Desktop et Mobile
